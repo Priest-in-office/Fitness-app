@@ -1,43 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-  <link href="/src/output.css" rel="stylesheet">
-  <title>Fitness App</title>
-</head>
-<body class="bg-white text-gray-800">
-  <nav class="flex items-center justify-between px-8 py-8 shadow-md">
-    <div class="container">
-      <div class="flex items-center space-x-2">
-        <a href="index.html">
-          <img src="/img/logo.png" alt="Company Logo" class="h-6">
-        </a>
-      </div>
-    </div>
-    <button class="text-2xl focus:outline-none">&#9776;</button>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="text-center px-4 py-10">
-    <div class="container">
-      <div class="hero-content">
-        <h1 class="text-2xl font-bold mb-2">Transform Your Fitness Journey. Start Today!</h1>
-        <p class="text-sm text-gray-600 mb-6">Track workouts, monitor progress, and acheive your goals with our all-in-one fitness app.</p>
-        <div class="flex flex-col gap-2 items-center">
-          <button class="bg-sky-500 hover:bg-sky-700 text-white font-bold text-lg w-full py-3 rounded-md">Get Started</button>
-          <button class="bg-gray-100 hover:bg-gray-300 text-gray-800 text-lg w-full py-3 rounded-md flex items-center justify-center space-x-2">
-            <span>&#128170;</span> Book a Demo
-          </button>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="/src/output.css" rel="stylesheet">
+    <title>Fitness App</title>
+  </head>
+  <body class="bg-white text-gray-800">
+    <nav class="flex items-center justify-between px-8 py-8 shadow-md">
+      <div class="container">
+        <div class="flex items-center space-x-2">
+          <a href="index.html">
+            <img src="/img/logo.png" alt="Company Logo" class="h-6">
+          </a>
         </div>
       </div>
-    </div>
-    <div class="w-full mt-20 rounded-md px-5">
-      <img src="/img/hero-bg-mobile.png" alt="preview 1" class="w-full sm:h-64 object-cover"/>
-    </div>
-  </section>
-</body>
+      <button class="text-2xl focus:outline-none">&#9776;</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center px-4 py-10">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="text-2xl font-bold mb-2">Transform Your Fitness Journey. Start Today!</h1>
+          <p class="text-sm text-gray-600 mb-6">Track workouts, monitor progress, and acheive your goals with our all-in-one fitness app.</p>
+          <div class="flex flex-col gap-2 items-center">
+            <button class="bg-sky-500 hover:bg-sky-700 text-white font-bold text-lg w-full py-3 rounded-md">Get Started</button>
+            <button class="bg-gray-100 hover:bg-gray-300 text-gray-800 text-lg w-full py-3 rounded-md flex items-center justify-center space-x-2">
+              <span>&#128170;</span> Book a Demo
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="w-full mt-20 rounded-md px-5">
+        <img src="/img/hero-bg-mobile.png" alt="preview 1" class="w-full sm:h-64 object-cover mb-10"/>
+      </div>
+    </section>
+
+    <!-- Add video -->
+    <section class="text-center bg-black text-white pt-10">
+      <div class="container">
+        <h2 class="text-4xl tracking-wide text-center text-wrap px-5">Discover how our app works and get fit in no time</h2>
+        <div class="flex flex-col items-center justify-center">
+          <a href="index.html">
+            <img src="/img/video-preview.png" alt="video-preview" class="w-full p-4 mt-8 sm:w-2/3 md:w-1/2 lg:w-1/3 rounded-md shadow-lg">
+          </a>
+          <a href="#" class="bg-sky-500 hover:bg-sky-700 text-white font-bold text-lg px-6 py-3 mt-5 mb-10 rounded-md">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="text-center px-4 py-10">
+      <div class="container">
+        <h2 class="text-3xl font-bold mb-6">What Our Users Say</h2>
+        <div class="flex flex-col items-center space-y-6">
+          <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md">
+            <p class="text-gray-700 mb-4">"This app has completely transformed my fitness routine. I love the tracking features and the community support!"</p>
+            <p class="font-semibold">- Alex Johnson</p>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-lg shadow-md max-w-md">
+            <p class="text-gray-700 mb-4">"The workout plans are easy to follow and have helped me stay consistent. Highly recommend!"</p>
+            <p class="font-semibold">- Jamie Lee</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
