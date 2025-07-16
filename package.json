@@ -1,0 +1,19 @@
+{
+  "name": "techyjaunt",
+  "version": "1.0.0",
+  "description": "This is my first Techyjaunt assignment where I will be replicating a Workout website. I plan to finish this in two days.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Priest-in-office/techyjaunt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Priest-in-office/techyjaunt/issues"
+  },
+  "homepage": "https://github.com/Priest-in-office/techyjaunt#readme"
+}
