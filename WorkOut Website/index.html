@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Stylesheet -->
-    <link href="/src/output.css" rel="stylesheet">
     <title>Fitness App</title>
+    <link href="/src/output.css" rel="stylesheet">
   </head>
   <body class="bg-white text-gray-800 font-poppins">
     <nav class="flex items-center justify-between px-8 py-8">
@@ -16,8 +15,24 @@
           </a>
         </div>
       </div>
-      <button type="button" class="text-2xl focus:outline-none">&#9776;</button>
+      <button id="menu-btn" type="button" class="text-2xl focus:outline-none">&#9776;</button>
+
+      <ul class="hidden md:flex space-x-6 items-center">
+        <li><a href="#" class="hover:text-blue-600">Home</a></li>
+        <li><a href="#" class="hover:text-blue-600">About Us</a></li>
+        <li><a href="#" class="hover:text-blue-600">Blog</a></li>
+        <li><button class="bg-gray-100 px-4 py-2 rounded flex items-center gap-2"><span>👤</span> Log In</button></li>
+      </ul>
     </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+      <div class="p-6 space-y-6">
+        <a href="#" class="block text-lg font-medium hover:text-blue-600">Home</a>
+        <a href="#" class="block text-lg font-medium hover:text-blue-600">About Us</a>
+        <a href="#" class="block text-lg font-medium hover:text-blue-600">Blog</a>
+        <button class="bg-gray-100 px-4 py-2 rounded flex items-center gap-2"><span>👤</span> Log In</button>
+      </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="text-center px-4 py-10">
@@ -76,6 +91,7 @@
     </section>
 
     <!-- Pricing Section -->
+    <section class="bg-white px-6 py-15 sm:py-32 lg:px-8">
     <section class="isolate bg-white px-6 py-15 sm:py-32 lg:px-8">
       <div class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl" aria-hidden="true">
         <div class="mx-auto aspect-1155/678 w-288.75 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
@@ -147,30 +163,13 @@
               </svg>
               Offline Access
             </li>
-            <!-- <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-sky-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-              </svg>
-              Dedicated support representative
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-sky-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-              </svg>
-              Marketing automations
-            </li>
-            <li class="flex gap-x-3">
-              <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-              </svg>
-              Custom integrations
-            </li>
-          </ul> -->
+          </ul>
           <a href="#" aria-describedby="tier-enterprise" class="mt-8 block rounded-md bg-sky-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-sky-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 sm:mt-10">Get started today</a>
         </div>
       </div>
       <p class="text-lg text-center mt-8">All prices are in USD and charged per month with applicable taxes added at checkout.</p>
     </section>
+
 
     <!-- FAQ Section -->
     <section class="bg-gray-100 px-4 py-10">
@@ -218,6 +217,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer Section -->
     <footer class="bg-woodsmoke-950 px-4 py-6">
       <div class="container">
         <div class="footer-content">
@@ -235,6 +236,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- JavaScript Aspect -->
     <script>
       document.querySelector("footer span").textContent = new Date().getFullYear();
 
@@ -254,6 +257,22 @@
           icon.textContent = '-';
         }
       }
+
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('translate-x-full');
+        mobileMenu.classList.toggle('translate-x-0');
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener('click', (event) => {
+        if (!mobileMenu.contains(event.target) && !menuBtn.contains(event.target)) {
+          mobileMenu.classList.add('translate-x-full');
+        }
+      });
+
     </script>
   </body>
 </html>
