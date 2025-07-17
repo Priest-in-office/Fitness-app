@@ -174,17 +174,17 @@
     <!-- FAQ Section -->
     <section class="bg-gray-100 px-4 py-10">
       <div class="max-w-2xl mx-auto px-1">
-        <h3 class="text-4xl font-semibold text-center mb-6 mt-6">Frequently Asked Questions</h3>
-        <ul class="flex justify-center gap-15 mb-6 bg-gray-300 p-4 rounded-md">
-          <li class="">All</li>
+        <h3 class="text-3xl font-light text-center mb-6 mt-6">Frequently Asked Questions</h3>
+        <ul class="flex justify-between items-center mb-6 bg-gray-300 p-3 rounded-md">
+          <li class="bg-sky-500 px-5 py-2 text-white rounded-md">All</li>
           <li>Getting Started</li>
-          <li>Pricing</li>
+          <li class="mr-3">Pricing</li>
         </ul>
 
         <div class="space-y-4">
           <!-- First Item -->
           <div class="border-b">
-            <button class="w-full flex justify-between items-center mb-10 py-4 text-left text-lg font-medium text-gray-800">
+            <button class="w-full flex justify-between items-center mb-10 py-4 text-left text-lg font-medium text-gray-800" onclick="toggleFAQ(this)">
               <span>How can the app help me achieve my fitness goals?</span>
               <span class="text-xl transition-transform duration-300">+</span>
             </button>
@@ -195,7 +195,7 @@
 
           <!-- Second Item -->
           <div class="border-b">
-            <button class="w-full flex justify-between items-center mb-10 py-4 text-left text-lg font-medium text-gray-800">
+            <button class="w-full flex justify-between items-center mb-10 py-4 text-left text-lg font-medium text-gray-800" onclick="toggleFAQ(this)">
               <span>Can I customize my workout plan?</span>
               <span class="text-xl transition-transform duration-300">+</span>
             </button>
@@ -206,7 +206,7 @@
 
           <!-- Third Item -->
           <div class="border-b mb-7">
-            <button class="w-full flex justify-between items-center mb-10 py-4 text-left text-lg font-medium text-gray-800">
+            <button class="w-full flex justify-between items-center mb-10 py-4 text-left text-lg font-medium text-gray-800" onclick="toggleFAQ(this)">
               <span>Is there a free trial available?</span>
               <span class="text-xl transition-transform duration-300">+</span>
             </button>
@@ -235,7 +235,24 @@
       </div>
     </footer>
     <script>
-      document.querySelector("footer span").textContent = new Date().getFullYear()
+      document.querySelector("footer span").textContent = new Date().getFullYear();
+
+      // Add the ability to open the FAQ answers
+      function toggleFAQ(button){
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('span:last-child');
+        const isOpen = !content.classList.contains('hidden');
+
+        // Close after open
+        document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('button span:last-child').forEach(i => i.textContent = '+');
+
+        // Open if closed
+        if(!isOpen){
+          content.classList.remove('hidden');
+          icon.textContent = '-';
+        }
+      }
     </script>
   </body>
 </html>
