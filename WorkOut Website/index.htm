@@ -267,7 +267,12 @@
           mobileMenu.classList.add('translate-x-full');
         }
       });
-
+      // Close mobile menu when clicking outside
+      document.addEventListener('click', (event) => {
+        if (!mobileMenu.contains(event.target) && !menuBtn.contains(event.target)) {
+          mobileMenu.classList.add('translate-x-full');
+        }
+      });
     </script>
   </body>
 </html>
