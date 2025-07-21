@@ -8,21 +8,21 @@
     <link href="/src/output.css" rel="stylesheet">
   </head>
   <body class="bg-white text-gray-800 font-poppins">
-    <nav class="flex items-center justify-between px-8 py-8">
+    <nav class="flex items-center justify-between px-8 py-8 lg:py-5 md:font-semibold mr-2">
       <div class="container">
-        <div class="flex items-center space-x-2">
+        <div class="flex items-center space-x-2 md:shrink-0">
           <a href="index.html">
             <img src="/img/logo.png" alt="Company Logo" class="h-6">
           </a>
         </div>
       </div>
-      <button id="menu-btn" type="button" class="text-2xl focus:outline-none">&#9776;</button>
+      <button id="menu-btn" type="button" class="text-2xl focus:outline-none md:hidden">&#9776;</button>
 
-      <ul class="hidden md:flex space-x-6 items-center">
+      <ul class="hidden md:flex justify-end py-1.5 space-x-9 text-md text-nowrap items-center">
         <li><a href="#" class="hover:text-blue-600">Home</a></li>
         <li><a href="#" class="hover:text-blue-600">About Us</a></li>
         <li><a href="#" class="hover:text-blue-600">Blog</a></li>
-        <li><button class="bg-gray-100 px-4 py-2 rounded flex items-center gap-2"><span>👤</span> Log In</button></li>
+        <li><button class="bg-gray-100 px-4 py-2 rounded-md flex items-center gap-2"><span>👤</span> Log In</button></li>
       </ul>
     </nav>
     <!-- Mobile Menu -->
@@ -37,9 +37,9 @@
 
     <!-- Hero Section -->
     <section class="text-center px-4 py-10">
-      <div class="container">
-        <div class="hero-content">
-          <h1 class="text-3xl text-black tracking-wide font-semibold mb-5">Transform Your Fitness Journey. Start Today!</h1>
+      <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-10">
+        <div class="flex-1 text-center lg:text-left">
+          <h1 class="text-3xl text-black tracking-wide font-semibold mb-5 md:text-4xl lg:text-5xl lg:mb-4">Transform Your Fitness Journey. Start Today!</h1>
           <p class="text-md text-woodsmoke-950 mb-6">Track workouts, monitor progress, and acheive your goals with our all-in-one fitness app.</p>
           <div class="flex flex-col gap-2 items-center">
             <button class="bg-sky-500 hover:bg-sky-700 text-white font-bold text-lg w-full py-3 rounded-md">Get Started</button>
