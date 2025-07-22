@@ -356,6 +356,12 @@
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
+  .h-\[550\] {
+    height: 550;
+  }
+  .h-\[550px\] {
+    height: 550px;
+  }
   .h-auto {
     height: auto;
   }
@@ -663,6 +669,24 @@
     --tw-gradient-to: #9089fc;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
+  .bg-contain {
+    background-size: contain;
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-fixed {
+    background-attachment: fixed;
+  }
+  .bg-bottom {
+    background-position: bottom;
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
+  }
   .object-cover {
     object-fit: cover;
   }
@@ -762,6 +786,9 @@
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
   }
+  .pt-50 {
+    padding-top: calc(var(--spacing) * 50);
+  }
   .pr-3 {
     padding-right: calc(var(--spacing) * 3);
   }
@@ -770,6 +797,9 @@
   }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
+  }
+  .pb-50 {
+    padding-bottom: calc(var(--spacing) * 50);
   }
   .text-center {
     text-align: center;
@@ -1643,9 +1673,54 @@
       border-bottom-left-radius: var(--radius-3xl);
     }
   }
+  .lg\:bg-\[ur\] {
+    @media (width >= 64rem) {
+      background-color: ur;
+    }
+  }
+  .lg\:bg-\[url\] {
+    @media (width >= 64rem) {
+      background-color: url;
+    }
+  }
   .lg\:bg-woodsmoke-950 {
     @media (width >= 64rem) {
       background-color: var(--color-woodsmoke-950);
+    }
+  }
+  .lg\:bg-\[url\(\)\] {
+    @media (width >= 64rem) {
+      background-image: url();
+    }
+  }
+  .lg\:bg-\[url\(\/\)\] {
+    @media (width >= 64rem) {
+      background-image: url(/);
+    }
+  }
+  .lg\:bg-\[url\(\/img\)\] {
+    @media (width >= 64rem) {
+      background-image: url(/img);
+    }
+  }
+  .lg\:bg-\[url\(\/img\/\)\] {
+    @media (width >= 64rem) {
+      background-image: url(/img/);
+    }
+  }
+  .lg\:bg-\[url\(\/img\/her\)\] {
+    @media (width >= 64rem) {
+      background-image: url(/img/her);
+    }
+  }
+  .lg\:bg-\[url\(\/img\/hero\)\] {
+    @media (width >= 64rem) {
+      background-image: url(/img/hero);
+    }
+  }
+  .lg\:bg-\[url\(\/img\/hero-bg\.png\)\] {
+    @media (width >= 64rem) {
+      background-image: url(/img/hero-bg.png);
     }
   }
   .lg\:object-cover {
