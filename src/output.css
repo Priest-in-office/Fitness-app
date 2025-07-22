@@ -275,6 +275,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mt-0 {
+    margin-top: calc(var(--spacing) * 0);
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -1481,6 +1484,11 @@
       height: calc(var(--spacing) * 150);
     }
   }
+  .lg\:h-\[550px\] {
+    @media (width >= 64rem) {
+      height: 550px;
+    }
+  }
   .lg\:h-auto {
     @media (width >= 64rem) {
       height: auto;
@@ -1724,6 +1732,21 @@
   .lg\:bg-\[url\(\/img\/hero-bg\.png\)\] {
     @media (width >= 64rem) {
       background-image: url(/img/hero-bg.png);
+    }
+  }
+  .lg\:bg-contain {
+    @media (width >= 64rem) {
+      background-size: contain;
+    }
+  }
+  .lg\:bg-bottom {
+    @media (width >= 64rem) {
+      background-position: bottom;
+    }
+  }
+  .lg\:bg-no-repeat {
+    @media (width >= 64rem) {
+      background-repeat: no-repeat;
     }
   }
   .lg\:object-cover {
