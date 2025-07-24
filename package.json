@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Priest-in-office/techyjaunt/issues"
   },
-  "homepage": "https://github.com/Priest-in-office/techyjaunt#readme"
+  "homepage": "https://github.com/Priest-in-office/techyjaunt#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
 }
